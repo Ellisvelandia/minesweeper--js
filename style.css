@@ -48,7 +48,7 @@ html {
   height: 75px;
   background: #262626;
   border: 5px solid;
-  border-color: #7c8a76 #e2e8ce #7c8ace #e2e8ce;
+  border-color: #7c8a76 #e2e8ce #e2e8ce #7c8a76;
   color: #ff7f11;
 }
 
@@ -59,24 +59,17 @@ html {
   width: 125px;
   margin: 0 20x 0 20px;
   padding-top: 5px;
-  background-color: #acbfa4;
+  background: #acbfa4;
   border: 5px solid;
-  border-color: #e2e8ce #7c8a76 #e2e8ce #7c8a76;
+  border-color: #e2e8ce #7c8a76 #7c8a76 #e2e8ce;
   outline: none;
   font-size: 0.9em;
   cursor: pointer;
-  animation: none;
 }
 
-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 125px;
-  margin: 0 20x 0 20px;
-  padding-top: 5px;
-  transform-origin: 50% 50%;
-  animation: character 2.5s 1s forwards cubic-bezier(0.84, 0.1, 0.31, 2.9);
+h1:hover {
+  overflow: hidden;
+  animation: rotateplane 2.2s infinite linear;
 }
 
 .grid {
@@ -102,16 +95,32 @@ img {
 .bomb {
   height: 40px;
   width: 40px;
-  border: 5ps solid;
-  border-color: #e2e8ce #7c8a76 #e2e8ce #7c8a76;
+  border: 5px solid;
+  border-color: #e2e8ce #7c8a76 #7c8a76 #e2e8ce;
   box-sizing: border-box;
 }
 
-@keyframes character {
-  0% {
-    transform: none;
-  }
-  50% {
-    transform: translateY(-1em);
-  }
+.checked {
+  height: 40px;
+  width: 40px;
+  border: 2px solid;
+  background-color: #262626;
+  border-color: #7c8a76;
+  box-sizing: border-box;
+}
+
+.one {
+  color: #4299e1;
+}
+
+.two {
+  color: #48bb78;
+}
+
+.three {
+  color: #f56565;
+}
+
+.four {
+  color: #9f7aea;
 }
